@@ -1,9 +1,9 @@
 "use server";
 
-import { auth } from "@/app/api/auth/[...nextauth]/route";
 import prisma from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+import { auth } from "./auth";
 
 export async function createPost(formData: FormData) {
   const session = await auth();

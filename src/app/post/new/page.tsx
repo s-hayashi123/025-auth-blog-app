@@ -1,6 +1,6 @@
-import { auth } from "@/app/api/auth/[...nextauth]/route";
 import { createPost } from "../../../../actions";
 import { redirect } from "next/navigation";
+import { auth } from "../../../../auth";
 
 export default async function NewPostPage() {
   const session = await auth();
