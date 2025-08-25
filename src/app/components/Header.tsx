@@ -1,7 +1,7 @@
 import { Session } from "next-auth";
 import Link from "next/link";
-import SignInButton from "./SignInButton"; // 後で作成
-import SignOutButton from "./SignOutButton"; // 後で作成
+import SignInButton from "./SignInButton";
+import SignOutButton from "./SignOutButton";
 
 export default function Header({ session }: { session: Session | null }) {
   return (
